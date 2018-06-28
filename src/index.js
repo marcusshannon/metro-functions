@@ -26,7 +26,7 @@ export const uploadToSheets = (req, res) => {
         {
           insertDimension: {
             range: {
-              sheetId: 177152709,
+              sheetId: 0,
               dimension: 'ROWS',
               startIndex: 0,
               endIndex: 1,
