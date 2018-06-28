@@ -1,0 +1,29 @@
+{
+  "name": "metro-functions",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx babel-cli src -d build",
+    "start": "yarn build && functions deploy uploadToSheets --trigger-http"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "6.14.0"
+          }
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "googleapis": "^32.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
