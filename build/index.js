@@ -31,7 +31,7 @@ const uploadToSheets = exports.uploadToSheets = (req, res) => {
             startIndex: 0,
             endIndex: 1
           },
-          inheritFromBefore: true
+          inheritFromBefore: false
         }
       }, {
         updateCells: {
